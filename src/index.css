@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Updated Color Palette - Professional & Aesthetic */
+    --background: 246 50% 88%;
+    --foreground: 202 68% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 202 68% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 202 68% 15%;
+
+    --primary: 202 68% 15%;
+    --primary-foreground: 246 50% 88%;
+    
+    --primary-hover: 184 73% 19%;
+    --primary-dark: 202 68% 10%;
+
+    --secondary: 276 17% 76%;
+    --secondary-foreground: 202 68% 15%;
+
+    --muted: 246 50% 95%;
+    --muted-foreground: 274 14% 60%;
+
+    --accent: 184 73% 19%;
+    --accent-foreground: 0 0% 100%;
+    
+    --accent-light: 274 14% 60%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 276 17% 90%;
+    --input: 276 17% 90%;
+    --ring: 202 68% 15%;
+
+    --radius: 0.75rem;
+    
+    /* Custom tokens for price comparison */
+    --best-price-glow: 184 73% 19%;
+    --card-shadow: 0 2px 8px rgba(11, 49, 66, 0.08);
+    --card-shadow-hover: 0 8px 24px rgba(11, 49, 66, 0.15);
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
